@@ -1,0 +1,73 @@
+@use './reset.scss';
+@use './color.scss' as color;
+@use './typography.scss' as type;
+
+// font
+// size
+
+
+// styling
+
+body {
+    @include type.body;
+    background-color: color.$cream;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview {
+    width: 18rem;
+    border-radius: 0.625rem;
+    background-color: color.$white;
+
+    &__image {
+        width: 100%;
+        border-top-left-radius: 0.625rem;
+        border-top-right-radius: 0.625rem;
+    }
+
+    &__content {
+        padding: 1.5rem;
+    }
+
+    &__type {
+        @include type.overline;
+        color: color.$grey;
+    }
+
+    &__name {
+        @include type.display;
+        color: color.$gunmetal;
+    }
+
+    &__description {
+        color: color.$grey;
+    }
+
+    &__price {
+        @include type.display;
+        color: color.$aquamarine;
+
+        &--original {
+            color: color.$grey;
+            font-size: 13px;
+            font-weight: 400;
+            text-decoration: line-through;
+        }
+    }
+
+    &__button {
+        @include type.button-text;
+        background-color: color.$aquamarine;
+        color: color.$white;
+        transition: all 0.25;
+        cursor: pointer;
+
+        &:hover {
+            background-color: color.$aquamarine--deep;
+        }
+    }
+}

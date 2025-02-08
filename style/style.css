@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  background-color: #F2EAE2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview {
+  width: 18rem;
+  border-radius: 0.625rem;
+  background-color: #FFFFFF;
+}
+.preview__image {
+  width: 100%;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+.preview__content {
+  padding: 1.5rem;
+}
+.preview__type {
+  font-size: 12px;
+  letter-spacing: 5px;
+  line-height: auto;
+  text-transform: uppercase;
+  color: #6C7289;
+}
+.preview__name {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 2;
+  color: #1C232B;
+}
+.preview__description {
+  color: #6C7289;
+}
+.preview__price {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 2;
+  color: #3D8168;
+}
+.preview__price--original {
+  color: #6C7289;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.preview__button {
+  font-weight: bold;
+  letter-spacing: 0px;
+  line-height: auto;
+  background-color: #3D8168;
+  color: #FFFFFF;
+  transition: all 0.25;
+  cursor: pointer;
+}
+.preview__button:hover {
+  background-color: #1A4032;
+}
+
+/*# sourceMappingURL=style.css.map */
