@@ -29,16 +29,21 @@ body {
         width: 19rem;
     }
 
-    @include adjust.desktop {
+    @include adjust.tablet {
         display: flex;
-        align-items: center;
-        width: 45rem;
+        width: 40rem;
     }
 
     &__image {
+        display: block;
         width: 100%;
         border-top-left-radius: 0.625rem;
         border-top-right-radius: 0.625rem;
+
+        @include adjust.tablet {
+            border-top-right-radius: 0rem;
+            border-bottom-left-radius: 0.625rem;
+        }
     }
 
     &__content {
@@ -46,6 +51,11 @@ body {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+
+        @include adjust.tablet {
+            display: flex;
+            justify-content: space-around;
+        }
     }
 
     &__type {
@@ -65,6 +75,8 @@ body {
     &__price {
         @include type.display;
         color: color.$aquamarine;
+        display: flex;
+        gap: 1rem;
 
         &--original {
             color: color.$grey;
