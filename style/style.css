@@ -26,7 +26,7 @@ body {
 }
 
 .preview {
-  width: 18rem;
+  width: 21rem;
   border-radius: 0.625rem;
   background-color: #FFFFFF;
 }
@@ -37,6 +37,9 @@ body {
 }
 .preview__content {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .preview__type {
   font-size: 12px;
@@ -51,7 +54,7 @@ body {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-  line-height: 2;
+  line-height: 2rem;
   color: #1C232B;
 }
 .preview__description {
@@ -63,7 +66,7 @@ body {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-  line-height: 2;
+  line-height: 2rem;
   color: #3D8168;
 }
 .preview__price--original {
@@ -75,14 +78,29 @@ body {
 .preview__button {
   font-weight: bold;
   letter-spacing: 0px;
-  line-height: auto;
+  line-height: 1;
+  padding: 1rem 2rem;
   background-color: #3D8168;
   color: #FFFFFF;
-  transition: all 0.25;
+  transition-duration: 0s;
+  border: none;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 .preview__button:hover {
+  transition-duration: 0.25s;
   background-color: #1A4032;
+}
+.preview__button:active {
+  background-color: #1A4032;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,7 +19,7 @@ body {
 }
 
 .preview {
-    width: 18rem;
+    width: 21rem;
     border-radius: 0.625rem;
     background-color: color.$white;
 
@@ -31,6 +31,9 @@ body {
 
     &__content {
         padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     &__type {
@@ -61,13 +64,31 @@ body {
 
     &__button {
         @include type.button-text;
+        padding: 1rem 2rem;
         background-color: color.$aquamarine;
         color: color.$white;
-        transition: all 0.25;
+        transition-duration: 0s; // ensure active state is animated instantly
+        border: none;
+        border-radius: 0.5rem;
         cursor: pointer;
 
         &:hover {
+            transition-duration: 0.25s;
             background-color: color.$aquamarine--deep;
         }
+
+        &:active {
+            background-color: color.$aquamarine--deep;
+        }
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    
+    & a {
+        color: hsl(228, 45%, 44%);
     }
 }
