@@ -12,6 +12,7 @@ body {
     @include type.body;
     background-color: color.$cream;
     min-height: 100vh;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
