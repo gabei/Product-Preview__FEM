@@ -108,19 +108,28 @@ body {
   letter-spacing: 0px;
   line-height: 1;
   padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   background-color: #3D8168;
   color: #FFFFFF;
-  transition-duration: 0s;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: all 0.25s;
 }
 .preview__button:hover {
-  transition-duration: 0.25s;
   background-color: #1A4032;
 }
 .preview__button:active {
+  transition-duration: 0s;
   background-color: #1A4032;
+}
+.preview__button:active > img {
+  animation-name: cart-slide;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
 }
 
 .attribution {
@@ -137,6 +146,29 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.cart-slide {
+  animation-name: cart-slide;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.4s;
+}
+
+@keyframes cart-slide {
+  0% {
+    transform: translate(0rem, 0rem) rotate(0deg);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(0.4rem, 0rem) rotate(10deg) scaleX(-1);
+  }
+  30% {
+    transform: translate(0.4rem, 0rem) rotate(0deg) scaleX(-1);
+  }
+  100% {
+    transform: translate(-8rem, 0rem) rotate(0deg);
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
