@@ -1,6 +1,7 @@
 @use './reset.scss';
 @use './color.scss' as color;
 @use './typography.scss' as type;
+@use './responsive.scss' as adjust;
 
 // font
 // size
@@ -23,6 +24,16 @@ body {
     width: 21rem;
     border-radius: 0.625rem;
     background-color: color.$white;
+
+    @include adjust.mobile--small {
+        width: 19rem;
+    }
+
+    @include adjust.desktop {
+        display: flex;
+        align-items: center;
+        width: 45rem;
+    }
 
     &__image {
         width: 100%;
@@ -88,6 +99,13 @@ body {
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    position: absolute;
+    bottom: 0;
+    padding: 0.5rem;
+
+    @include adjust.mobile--small {
+        position: relative;
+    }
     
     & a {
         color: hsl(228, 45%, 44%);

@@ -12,7 +12,11 @@
 <body>
 
   <main class="preview">
-    <img class="preview__image" src="./images/image-product-mobile.jpg" alt="" class="preview__image">
+    <picture >
+      <source srcset="./images/image-product-desktop.jpg" media="(min-width: 1024px)">
+      <img class="preview__image" src="./images/image-product-mobile.jpg" alt="Preview image of Gabrielle Essence Eau De Parfum">
+    </picture>
+    
     <section class="preview__content">
       <span class="preview__type">Perfume</span>
       <h1 class="preview__name">Gabrielle Essence Eau De Parfum</h1>
