@@ -1,36 +1,36 @@
-const addToCartButton = document.querySelector('.preview__button');
+const cartButton = document.querySelector('.preview__button');
+const cartButtonText = document.querySelector('.preview__button > span');
 const cart = document.querySelector('.cart-icon');
 const check = document.querySelector('.check-icon');
 
-addToCartButton.addEventListener('click', () => {
-    console.log(buttonIsActive());
-    toggleActiveButton();
-});
+cartButton.addEventListener('click', toggleActiveButton); 
 
 function toggleActiveButton(){
     if (buttonIsActive()) {
+        toggleButtonText("Add to cart");
         removeActiveClasses();
         reverseAnimations();
     } else {
+        toggleButtonText("Added to cart");
         removeReverseAnimations();
         addActiveClasses();
     }
 }
 
 function buttonIsActive(){
-    return addToCartButton.classList.contains("button-active");
+    return cartButton.classList.contains("button-active");
 }
 
 function addActiveClasses(){
     cart.classList.add("cart-slide");
     check.classList.add("check-slide");
-    addToCartButton.classList.add("button-active");
+    cartButton.classList.add("button-active");
 }
 
 function removeActiveClasses(){
     cart.classList.remove("cart-slide");
     check.classList.remove("check-slide");
-    addToCartButton.classList.remove("button-active");
+    cartButton.classList.remove("button-active");
 }
 
 function reverseAnimations(){
@@ -41,4 +41,11 @@ function reverseAnimations(){
 function removeReverseAnimations(){
     cart.classList.remove("cart-slide--reverse");
     check.classList.remove("check-slide--reverse");
+}
+
+function toggleButtonText(newTextContent) {
+    setTimeout(() => {
+        cartButtonText.textContent = newTextContent;
+    },500);
+    
 }
