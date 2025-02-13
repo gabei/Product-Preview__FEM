@@ -2,7 +2,6 @@
 @use './color.scss' as color;
 @use './typography.scss' as type;
 @use './responsive.scss' as adjust;
-@use './sizing.scss' as size;
 
 body {
     @include type.body;
@@ -30,6 +29,12 @@ body {
     @include adjust.tablet {
         display: flex;
         width: 40rem;
+    }
+
+    & > * {
+        @include adjust.tablet {
+            flex: 1
+        }
     }
 
     &__image {
