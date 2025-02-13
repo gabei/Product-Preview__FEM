@@ -141,6 +141,11 @@ body {
     position: relative;
   }
 }
+@media screen and (max-width: 1024px) and (max-height: 680px) {
+  .attribution {
+    position: relative;
+  }
+}
 .attribution a {
   color: hsl(228, 45%, 44%);
 }

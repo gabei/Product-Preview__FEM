@@ -10,8 +10,14 @@ $desktop: 1280px;
     }
 }
 
-@mixin mobile{
-    @media screen and (max-width: $mobile){
+@mixin mobile(){
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin mobile--landscape() {
+    @media screen and (max-width: $tablet) and (max-height: $mobile) {
         @content;
     }
 }

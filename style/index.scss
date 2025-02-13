@@ -125,6 +125,10 @@ body {
     @include adjust.mobile--small {
         position: relative;
     }
+
+    @include adjust.mobile--landscape{
+        position: relative;
+    }
     
     & a {
         color: hsl(228, 45%, 44%);
