@@ -59,7 +59,7 @@ I'm excited about implementing more CSS animations in future projects. I think t
 ## Author
 
 - Frontend Mentor - <a href="https://www.frontendmentor.io/profile/gabei" target="_blank">@gabei</a>
-- Github - <a href="@Gabei](https://www.github.com/gabei" target="_blank">@gabei</a>
+- Github - <a href="(https://www.github.com/gabei" target="_blank">@gabei</a>
 
 ## Acknowledgments
 Background Photo by <a href="https://www.pexels.com/photo/close-up-photo-of-green-leafed-plant-1407305/" target="_blank">Aditya Aiyar</a>
