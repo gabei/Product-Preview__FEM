@@ -57,8 +57,9 @@ I'm excited about implementing more CSS animations in future projects. I think t
 - <a href="https://feathericons.com/" target="_blank">Feather Icons</a> - Easy to use icons for front end devlopment.
 
 ## Author
-- Frontend Mentor - [@Gabei](https://www.frontendmentor.io/profile/gabei)
-- Github - [@Gabei](https://www.github.com/gabei)
+
+- Frontend Mentor - <a href="https://www.frontendmentor.io/profile/gabei" target="_blank">@gabei</a>
+- Github - <a href="@Gabei](https://www.github.com/gabei" target="_blank">@gabei</a>
 
 ## Acknowledgments
 Background Photo by <a href="https://www.pexels.com/photo/close-up-photo-of-green-leafed-plant-1407305/" target="_blank">Aditya Aiyar</a>
