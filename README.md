@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./site-snapshot.png" alt="Site preview">
+<img src="./images/site-snapshot.png" alt="Site preview">
 
 ### Links
 
