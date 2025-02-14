@@ -3,7 +3,7 @@
 
 @mixin display {
     font-family: "Fraunces", serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
@@ -12,7 +12,7 @@
 
 @mixin body() {
     font-family: "Montserrat", serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
@@ -22,13 +22,13 @@
 
 @mixin button-text {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 0px;
     line-height: 1;
 }
 
 @mixin overline {
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing: 5px;
     line-height: auto;
     text-transform: uppercase;
