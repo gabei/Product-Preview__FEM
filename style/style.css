@@ -126,8 +126,10 @@ body {
   cursor: pointer;
   transition: all 0.25s;
 }
-.preview__button:hover {
-  background-color: #1A4032;
+@media (hover: hover) {
+  .preview__button:hover {
+    background-color: #1A4032;
+  }
 }
 .preview__button:active {
   transition-duration: 0s;

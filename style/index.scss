@@ -103,8 +103,10 @@ body {
         cursor: pointer;
         transition: all 0.25s;
 
-        &:hover {
-            background-color: color.$aquamarine--deep;
+        @include adjust.hoverable {
+            &:hover {
+                background-color: color.$aquamarine--deep;
+            }
         }
 
         &:active {

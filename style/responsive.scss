@@ -22,6 +22,13 @@ $desktop: 1280px;
     }
 }
 
+// this mixin solves the "sticky hover" issue with mobile devices.
+@mixin hoverable {
+    @media (hover: hover) {
+        @content;
+    }
+}
+
 @mixin tablet{
     @media screen and (min-width: $mobile){
         @content;
